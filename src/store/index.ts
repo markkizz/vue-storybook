@@ -3,14 +3,14 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-const requireModules = require.context(
-  './modules',
-  true,
-  /index\w+\.(ts)$/ 
-)
-console.log("require module", requireModules)
+// const requireModules = require.context(
+//   './modules',
+//   true,
+//   /index\w+\.(ts)$/,
+// );
+
 export default new Vuex.Store({
   modules: {
 
-  }
+  },
 });
