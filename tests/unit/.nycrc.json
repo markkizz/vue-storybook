@@ -1,0 +1,12 @@
+{
+  "extends":"@istanbuljs/nyc-config-typescript",
+  "sourceMap":false,
+  "instrument":false,
+  "check-coverage":false,
+  "reporter":["lcov","text-summary","text"],
+  "report-dir":"./tests/unit/coverage",
+  "temp-dir":"./tests/unit/coverage",
+  "exclude":["dist","**/*.d.ts"],
+  "require":["@babel/register","jsdom-global/register","ts-node/register"],
+  "extension":[".ts",".js",".vue"]
+}

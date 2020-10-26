@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div v-if="$route.path === '/'" id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/unit-test">Unit Test</router-link>
+    </div>
+    <div v-else id="nav">
+      <router-link to="/" >Back</router-link>
     </div>
     <router-view/>
   </div>
